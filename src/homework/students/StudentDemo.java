@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class StudentDemo implements Commands{
 
     private static Scanner scanner = new Scanner(System.in);
-    private static StudentStorage studentStorage = new StudentStorage(); 
+    private static StudentStorage studentStorage = new StudentStorage();
     public static void main(String[] args) {
         boolean run = true;
         while (run) {

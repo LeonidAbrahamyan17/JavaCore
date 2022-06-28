@@ -9,10 +9,10 @@ public class Demo implements Commands {
 
     public static void main(String[] args) {
         // Adding some books for test
-        bookStorage.add(new Book("Romeo and Juliet", "Shakespeare", 20.5, 2, "classical"));
-        bookStorage.add(new Book("Java", "Herbert Shield", 15.0, 4, "technical"));
-        bookStorage.add(new Book("IT", "Stephen King", 30, 1, "horror"));
-        bookStorage.add(new Book("Apocalypse 3", "Max Maxim", 20, 2, "fantasy"));
+        bookStorage.add(new Book("Հայր Գորիո", "Бальзак", 3500, 2, "classical"));
+        bookStorage.add(new Book("Java", "Герберт Шилдт", 4000, 1, "educational"));
+        bookStorage.add(new Book("Ես և Նա", "Նար-Դոս", 1500, 1, "classical"));
+        bookStorage.add(new Book("Դորիան Գրեյի դիմանկարը", "Oskar Uayld", 2500, 3, "detective"));
 
         boolean runAble = true;
         while (runAble) {

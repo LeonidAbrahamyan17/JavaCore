@@ -8,7 +8,7 @@ public class Demo implements Commands {
     private final static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // Adding some books for test
+
         bookStorage.add(new Book("Հայր Գորիո", "Бальзак", 3500, 2, "classical"));
         bookStorage.add(new Book("Java", "Герберт Шилдт", 4000, 1, "educational"));
         bookStorage.add(new Book("Ես և Նա", "Նար-Դոս", 1500, 1, "classical"));

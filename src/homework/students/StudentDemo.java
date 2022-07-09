@@ -22,9 +22,9 @@ public class StudentDemo implements Commands {
         lessonStorage.add(java);
         lessonStorage.add(mysql);
         lessonStorage.add(php);
-        studentStorage.add(new Student("poxos", "poxosyan", 24, "123454", "Gyumri", java));
-        studentStorage.add(new Student("petros", "poxosyan", 22, "1243454", "Gyumri", mysql));
-        studentStorage.add(new Student("martiros", "poxosyan", 12, "1236454", "Gyumri", php));
+        studentStorage.add(new Student("Poxos", "Poxosyan", 24, "098877665", "Gyumri", java));
+        studentStorage.add(new Student("Petros", "Petrosyan", 22, "055443322", "Gyumri", mysql));
+        studentStorage.add(new Student("Martiros", "Martirosyan", 31, "093132333", "Gyumri", php));
         boolean run = true;
         while (run) {
             Commands.printCommands();

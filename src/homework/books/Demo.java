@@ -178,4 +178,5 @@ public class Demo implements Commands {
         System.out.println("please input " + DELETE_AUTHOR_BY_INDEX + "for delete author");
         System.out.println("please input " + PRINT_AUTHOR_BY_INDEX + " for print author by index");
     }
+
 }

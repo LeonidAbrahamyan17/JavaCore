@@ -10,5 +10,4 @@ public class WrapperTest {
         System.out.println(a.equals(b));
 
     }
-
 }

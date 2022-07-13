@@ -118,7 +118,7 @@ public class Demo implements Commands {
         System.out.println("Input author gender");
         String gender = scanner.nextLine();
         Author author = new Author(name, surname, email, gender);
-        authorStorage.add(author);
+        AuthorStorage.add(author);
         System.out.println("The Author has been created!");
     }
 
@@ -150,7 +150,7 @@ public class Demo implements Commands {
         try {
             System.out.println("Input book title");
             String title = scanner.nextLine();
-            System.out.println("Input book author index");
+            System.out.println("Input author index");
             int index = Integer.parseInt(scanner.nextLine());
             System.out.println("Input book price");
             double price = Double.parseDouble(scanner.nextLine());

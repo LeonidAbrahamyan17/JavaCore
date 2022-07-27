@@ -1,18 +1,21 @@
 package homework.books.model;
 
-public class Author {
+public class User {
     private String name;
     private String surname;
     private String email;
-    private String gender;
-    private User registeredUser;
+    private String password;
+    private Role role;
 
-    public Author(String name, String surname, String email, String gender, User user) {
+    public User(String name, String surname, String email, String password, Role role) {
         this.name = name;
         this.surname = surname;
         this.email = email;
-        this.gender = gender;
-        this.registeredUser = user;
+        this.password = password;
+        this.role = role;
+    }
+
+    public User() {
     }
 
     public String getName() {
@@ -39,30 +42,30 @@ public class Author {
         this.email = email;
     }
 
-    public String getGender() {
-        return gender;
+    public String getPassword() {
+        return password;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public User getRegisteredUser() {
-        return registeredUser;
+    public Role getRole() {
+        return role;
     }
 
-    public void setRegisteredUser(User registeredUser) {
-        this.registeredUser = registeredUser;
+    public void setRole(Role role) {
+        this.role = role;
     }
+
 
     @Override
     public String toString() {
-        return "Author{" +
+        return "User{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", email='" + email + '\'' +
-                ", gender='" + gender + '\'' +
-                ", registeredUser=" + registeredUser +
+                ", role=" + role +
                 '}';
     }
 }

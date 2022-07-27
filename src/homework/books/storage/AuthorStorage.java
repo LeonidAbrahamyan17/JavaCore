@@ -5,7 +5,7 @@ import homework.books.model.Author;
 
 public class AuthorStorage {
     private static Author[] authors = new Author[10];
-    private static int size = 0;
+    private static int  size = 0;
 
     public static void add(Author author) {
         if (authors.length == size) {
@@ -22,7 +22,6 @@ public class AuthorStorage {
     }
 
     private static void extend() {
-
         Author[] temp = new Author[authors.length + 10];
         for (int i = 0; i < size; i++) {
             temp[i] = authors[i];
@@ -34,9 +33,10 @@ public class AuthorStorage {
         return (size == 0);
     }
 
+
     public void deleteAuthorByIndex(int index) {
         if (index < 0 || index > size) {
-            System.out.println("This index does not exist!!!");
+            System.out.println("This index does not exist!");
         } else {
             for (int i = index; i < size; i++) {
                 authors[i] = authors[i + 1];
@@ -48,14 +48,14 @@ public class AuthorStorage {
 
     public void add(int index, Author author) {
         if (index < 0 || index > size) {
-            System.out.println("This index does not exist!!!");
+            System.out.println("This index does not exist!");
             System.out.println();
         } else {
             for (int i = index; i < authors.length - 1; i++) {
                 authors[i + 1] = authors[i];
                 authors[index] = author;
             }
-            System.out.println("User has been added!");
+            System.out.println("User has been added");
         }
     }
 
@@ -64,9 +64,9 @@ public class AuthorStorage {
     }
 
     public Author getAuthorByIndex(int index) throws AuthorNotFoundException {
-        if (index < 0 || index > size) {
+        if (index < 0 || index > size){
             throw new AuthorNotFoundException("There is no author with index " + index);
-        } else {
+        }else{
             return authors[index];
         }
     }

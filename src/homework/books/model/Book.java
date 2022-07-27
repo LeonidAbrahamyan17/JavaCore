@@ -54,9 +54,11 @@ public class Book {
     public void setGenre(String genre) {
         this.genre = genre;
     }
-    public Book(){
+
+    public Book() {
 
     }
+
     @Override
     public String toString() {
         return "Book{" +
